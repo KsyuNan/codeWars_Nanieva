@@ -59,7 +59,6 @@ function banana () {
   // select some variable to combine "banana"
   return b2 + a2 + n2 + a2 + n2 + a2
 }
-
 // answer some questions if you finished works above
 function answer1 () {
   // the answer should be "yes" or "no"
@@ -161,3 +160,65 @@ function giveMeFive (obj) {
   }
   return arr
 }
+
+// Training JS #13: Number object and its properties 
+
+function whatNumberIsIt (n) {
+  // coding here
+  switch (true) {
+    case ( n == Number.MAX_VALUE):
+      return 'Input number is Number.MAX_VALUE'
+    case ( n == Number.MIN_VALUE):
+      return 'Input number is Number.MIN_VALUE'
+    case ( isNaN(n)):
+      return 'Input number is Number.NaN'
+    case ( n == Number.NEGATIVE_INFINITY):
+      return 'Input number is Number.NEGATIVE_INFINITY'
+    case ( n == Number.POSITIVE_INFINITY):
+      return 'Input number is Number.POSITIVE_INFINITY'
+    default:
+      return 'Input number is ' + n
+  }
+}
+
+// Training JS #14: Methods of Number object--toString() and toLocaleString()
+
+// Training JS #15: Methods of Number object--toFixed(), toExponential() and toPrecision()
+
+// Training JS #16: Methods of String object--slice(), substring() and substr()
+
+// Training JS #17: Methods of String object--indexOf(), lastIndexOf() and search()
+function firstToLast (str, c) {
+  // coding here..
+  let firstPosition = str.indexOf(c)
+  let lastPosition = str.lastIndexOf(c)
+
+  if (firstPosition === -1) {
+    return -1
+  } else {
+    return lastPosition - firstPosition
+  }
+}
+
+// Training JS #18: Methods of String object--concat() split() and its good friend join()
+
+function splitAndMerge (string, separator) {
+  return string.split('')
+    .join(separator + '')
+    .split(separator + ' ' + separator)
+    .join(' ')
+}
+
+// Training JS #19: Methods of String object--toUpperCase() toLowerCase() and replace()
+
+// Training JS #20: Methods of String object--charAt() charCodeAt() and fromCharCode()
+
+// Training JS #21: Methods of String object--trim() and the string template
+
+// Training JS #22: Unlock new skills--Arrow function,spread operator and deconstruction
+
+// Training JS #23: methods of arrayObject---push(), pop(), shift() and unshift()
+
+// Training JS #24: methods of arrayObject---splice() and slice()
+
+// Training JS #25: methods of arrayObject---reverse() and sort()
